@@ -1,5 +1,5 @@
 # Program to take a string input and output every second letter in reverse. 
-#Author Gerry Donnelly
+# Author Gerry Donnelly
 
 strin = input("Enter a text string: ") # Get the string input.
 
