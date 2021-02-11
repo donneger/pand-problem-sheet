@@ -15,8 +15,8 @@ while numinput < 0: # Cannot have a negative number.
 
 numlist.append(numinput) # Get here when positive integer is input, add it to the list as the first number. 
 
-# Calculation section, as long as the calculation result is not equal to 1 the program checks each succesive result. 
-# if it is even, divide it by two, but if it is odd, multiply it by three and add one. Append each result to the list
+# Calculation section, as long as the calculation result of the number to be output is not equal to 1 the program checks each succesive result. 
+# if a result is even, divide it by two, but if it is odd, multiply it by three and add one. Append each result to the list
 while numout != 1:
     if numinput%2 == 0: # If value is even divide it by 2 and append to the list. 
         numout = int(numinput/2)
@@ -27,5 +27,5 @@ while numout != 1:
         numlist.append(numout)
         numinput = numout
 
-# Get here because the calculation has resulted in 1 so loop ends. 
+# Get here because the calculation of "numout" has resulted in 1 so loop ends. 
 print (numlist) # Print the resulting list of numbers from the calculation. 
