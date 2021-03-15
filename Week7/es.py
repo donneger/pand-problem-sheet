@@ -1,4 +1,4 @@
-# Program to count the number of "e" characters in a text file. 
+# Program to count the number of "e" letters in a text file. 
 # This program uses the text of the noverl Moby Dick , source https://www.gutenberg.org/files/2701/old/moby10b.txt
 # The text for counting uses the novel text only, excludes the file intro and etymology.
 
