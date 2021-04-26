@@ -17,15 +17,15 @@ class color: # Define Class color to help with formatting the output strings, so
 format = color() 
 
 # Inputs are converted to integers at the input stage by adding "int(.....")
-Height = int(input("Please enter your " + format.BOLD + format.UNDERLINE + "Height" + format.END + " in CM: ")) # User inputs Height in CM"
-Weight = int(input("Please enter your " + format.BOLD + format.UNDERLINE + "Weight" + format.END + "in KG: ")) # User inputs Weight in KG"
+Height = int(input("\nPlease enter your " + format.BOLD + format.UNDERLINE + "Height" + format.END + " in CM: ")) # User inputs Height in CM"
+Weight = int(input("Please enter your " + format.BOLD + format.UNDERLINE + "Weight" + format.END + " in KG: ")) # User inputs Weight in KG"
 
-BMI = Weight/((Height/100)*2)   # Calculate the BMI from the user inputs.
+BMI = round(Weight/((Height/100)*2),2)   # Calculate the BMI from the user inputs rounded to 2 decimal places. 
 
 # This section checks the BMI result against the normal BMI ctriteria for Low, Normal, High and prints out the result, text is formatted based on the result. 
 if BMI<18.5:    # Check if BMI low
-    print ("Your BMI is " + format.RED + format.BOLD + format.UNDERLINE + str(BMI) + " and is LOW" + format.END)
+    print ("\nYour BMI is " + format.RED + format.BOLD + format.UNDERLINE + str(BMI) + " and is LOW" + format.END)
 elif BMI>25:    #Check if BMI is High
-        print ("Your BMI is " +  format.RED + format.BOLD + format.UNDERLINE+ str(BMI) + " and is HIGH" + format.END) 
+        print ("\nYour BMI is " +  format.RED + format.BOLD + format.UNDERLINE+ str(BMI) + " and is HIGH" + format.END) 
 else:   # If BMI is not Low or High then it is Nornal.
-    print ("Congrats Your BMI is " + format.GREEN + format.BOLD + format.UNDERLINE + str(BMI)  + " and is NORMAL " + format.END) # If not Low or High then it is Nornal.
+    print ("\nCongrats Your BMI is " + format.GREEN + format.BOLD + format.UNDERLINE + str(BMI)  + " and is NORMAL " + format.END) # If not Low or High then it is Nornal.
