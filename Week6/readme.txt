@@ -15,6 +15,5 @@ Note thsi method provide only an approximation of the true value of ythe root bu
 
 
 References:
-References:
 https://www.geeksforgeeks.org/find-root-of-a-number-using-newtons-method/
 https://www.w3schools.com/python/python_functions.asp
