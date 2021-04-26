@@ -1,4 +1,5 @@
 # Program to display the plot of the functions f(x)=x, g(x)=x^2 and h(x)=x^3 in the range [0, 4] on a single set of axes.
+# plottask.py
 # Author: Gerry Donnelly.
 
 import numpy as np
@@ -8,11 +9,10 @@ import matplotlib.pyplot as plt
 x = np.array([0,1,2,3,4]) # Set up the function range. 
 
 # This section sets up the plots for each of the functions'
-# Colors sourced from https://matplotlib.org/stable/gallery/color/named_colors.html
 # Sets the facecolor of the plot, i.e. the color surrounding the plot. 
 plt.figure(facecolor = 'lightcyan') 
 
-# This section creates and formats the individual plot lines. # https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.plot.html.
+# This section creates and formats the individual plot lines. 
 # It is a tiny subset of the vast number of options availabel for plotting. 
 # First is the line style and color, MS is line marker size, mec and mfc set the markers face and edge colors, label applies a legend to the plot . 
 plt.plot(x, x, 'o-r', ms=10, mec = 'b', mfc = 'r', label = 'Linear f(x)')
@@ -28,7 +28,12 @@ plt.title('Week 8 Lab Plotting', fontsize = 20, fontweight = 'bold', style = 'it
 plt.xlabel('Dimension (x)', fontsize = 15)
 plt.ylabel('Function(y)', fontsize = 15)
 plt.grid(linestyle = 'dashed')
+plt.savefig("Week8_Task_Plot.png")
 plt.show()
 
-
+# References
+# Colors sourced from https://matplotlib.org/stable/gallery/color/named_colors.html
+# https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.plot.html.
+# https://matplotlib.org/stable/tutorials/introductory/usage.html#sphx-glr-tutorials-introductory-usage-py
+# https://www.w3schools.com/python/numpy/numpy_intro.asp
 
